@@ -8,12 +8,12 @@ def insertion_sort(A):
     if n == 1:
         return A
     for key,i in [(A[j], j-1) for j in xrange(1,n)]:
-        print '%s@[%s]' % (key, i+1),
+        print '%s @[%s]' % (key, i+1),
         while i>0 and A[i] > key:
             A[i+1] = A[i]
             i = i -1
         A[i+1] = key
-        print '%s->[%s]' % (key, i+1),
+        print '-> [%s]' % (i+1),
         print A
     return A
 

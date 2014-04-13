@@ -25,7 +25,7 @@ def merge(sorted_A, sorted_B):
         else:
             rtn_list.append(sorted_A[idxa])
             idxa += 1
-    print rtn_list
+    print '-> %s' % rtn_list
     return rtn_list
 
 
